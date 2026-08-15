@@ -1522,19 +1522,7 @@ a {
   
   /* Hero title elements */
   .hero-title-wrapper {
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
-  }
-  
-  .hero-title-left, .hero-title-right {
-    font-size: 18vw;
-    text-align: center;
-    transform: none;
-  }
-
-  .hero-title-left {
-    margin-bottom: -15px;
+    display: none;
   }
   
   .hero-centerpiece {
