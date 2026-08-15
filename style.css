@@ -1386,6 +1386,18 @@ a {
   font-size: 0.9rem;
 }
 
+.footer-linkedin {
+  margin-left: 10px;
+  color: #6C7A89;
+  font-size: 1.15rem;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+.footer-linkedin:hover {
+  color: var(--accent-yellow);
+}
+
 .footer-legal-links {
   display: flex;
   gap: 25px;
