@@ -194,16 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
       tagSweet.innerText = sweetName;
     }
 
-    // 3. Get Boosters
-    const selectedBoosters = document.querySelectorAll('input[name="booster"]:checked');
-    selectedBoosters.forEach(booster => {
-      totalPrice += parseFloat(booster.getAttribute('data-price'));
-      booster.closest('.option-card').classList.add('checked');
-    });
-
-    document.querySelectorAll('input[name="booster"]:not(:checked)').forEach(booster => {
-      booster.closest('.option-card').classList.remove('checked');
-    });
 
     // Update Price Display
     if (customPriceEl) {
