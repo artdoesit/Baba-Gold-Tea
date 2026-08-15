@@ -808,8 +808,13 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: filter 0.5s ease;
-  border-radius: 50%;
+  transition: filter 0.5s ease, transform 0.5s ease;
+  animation: floatPreview 6s ease-in-out infinite;
+}
+
+@keyframes floatPreview {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .glow-effect {
