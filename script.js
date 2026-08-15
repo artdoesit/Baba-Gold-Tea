@@ -158,10 +158,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     selectedBase.closest('.option-card').classList.add('checked');
 
-    // Update glow color
+    // Update glow color and preview image
     const baseKey = selectedBase.value;
     if (glowEffect) {
       glowEffect.style.background = `radial-gradient(circle, ${glowColors[baseKey]} 0%, rgba(255,255,255,0) 70%)`;
+    }
+
+    const baseImages = {
+      cashew: 'assets/baba_gold_tea.png',
+      oat: 'assets/princess_gold_tea.png',
+      almond: 'assets/princess_elaichi_tea.png',
+      coconut: 'assets/baba_gold_tea.png'
+    };
+
+    if (customBottleImg) {
+      customBottleImg.src = baseImages[baseKey];
+      if (baseKey === 'coconut') {
+        // Apply warm oolong-colored filter to the package
+        customBottleImg.style.filter = 'drop-shadow(0 15px 25px rgba(0,0,0,0.2)) sepia(0.55) saturate(1.1) hue-rotate(-25deg) brightness(0.8)';
+      } else {
+        customBottleImg.style.filter = 'drop-shadow(0 15px 25px rgba(0,0,0,0.2))';
+      }
     }
 
     // Update base tag text
