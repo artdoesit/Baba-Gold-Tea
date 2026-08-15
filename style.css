@@ -1406,18 +1406,37 @@ a {
    Responsive Queries
    ------------------------------------------------------------- */
 @media (max-width: 1024px) {
+  /* Layout Padding & Spacing */
+  .hero-section {
+    padding: 40px 24px 60px 24px;
+    min-height: auto;
+  }
+  
+  .nutrition-section, .recipes-section, .testimonials-section {
+    padding: 60px 24px;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
-    row-gap: 40px;
+    row-gap: 50px;
   }
   
   .hero-title-left, .hero-title-right {
-    font-size: 15vw;
+    font-size: 14vw;
   }
   
+  /* Layout shifts */
   .hero-bottom-left {
     grid-column: 1;
     grid-row: 2;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-tagline {
+    text-align: center;
+    max-width: 100%;
+    font-size: 2.2rem;
   }
   
   .hero-bottom-right {
@@ -1425,19 +1444,52 @@ a {
     grid-row: 3;
     justify-content: center;
   }
+
+  .product-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  /* Dashboard comparison grid */
+  .nutrition-comparison-grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .comparison-selectors {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .selector-tab {
+    flex: 1 1 calc(50% - 10px);
+    justify-content: center;
+    padding: 14px;
+  }
   
   .customizer-interactive-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
   
   .preview-panel {
     position: relative;
     top: 0;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
   
   .recipe-panel-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+    padding: 40px;
   }
   
   .footer-top {
@@ -1447,6 +1499,19 @@ a {
 }
 
 @media (max-width: 768px) {
+  /* Spacing */
+  .hero-section {
+    padding: 20px 16px 40px 16px;
+  }
+  
+  .nutrition-section, .recipes-section, .testimonials-section, .main-footer {
+    padding: 50px 16px;
+  }
+
+  .header-container {
+    padding: 0 20px;
+  }
+
   .nav-menu, .header-actions .btn-outline {
     display: none;
   }
@@ -1455,67 +1520,174 @@ a {
     display: block;
   }
   
+  /* Hero title elements */
   .hero-title-wrapper {
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
     align-items: center;
   }
   
   .hero-title-left, .hero-title-right {
     font-size: 18vw;
     text-align: center;
+    transform: none;
+  }
+
+  .hero-title-left {
+    margin-bottom: -15px;
   }
   
   .hero-centerpiece {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
   .bottle-wrapper {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
   }
   
   .vegan-badge {
-    width: 70px;
-    height: 70px;
-    right: calc(50% - 110px);
+    width: 65px;
+    height: 65px;
+    right: calc(50% - 105px);
+    top: 30px;
+  }
+
+  .badge-icon {
+    font-size: 1.1rem;
+  }
+
+  .badge-text {
+    font-size: 0.7rem;
+  }
+
+  .btn-shop-now {
+    font-size: 1.1rem;
+    padding: 12px 30px;
   }
   
   .hero-tagline {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   
+  /* Cards list vertical flow */
   .product-cards-grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   .product-card {
-    height: 220px;
+    height: 240px;
   }
-  
-  .nutrition-comparison-grid {
+
+  /* Dashboard widgets */
+  .comparison-selectors {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .selector-tab {
+    flex: 1 1 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .chart-bar-row {
+    grid-template-columns: 90px 1fr 70px;
+    font-size: 0.85rem;
+  }
+
+  .bar-outer {
+    height: 16px;
+  }
+
+  /* Customizer Options */
+  .options-grid {
     grid-template-columns: 1fr;
   }
-  
-  .chart-bar-row {
-    grid-template-columns: 100px 1fr 80px;
+
+  .options-grid.grid-3 {
+    grid-template-columns: 1fr;
   }
-  
+
+  .option-card {
+    padding: 12px;
+  }
+
+  /* Recipes Section */
+  .recipes-tabs-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: none;
+  }
+
+  .recipe-tab-btn {
+    font-size: 1.05rem;
+    padding: 8px 16px;
+    width: 100%;
+    text-align: center;
+    background: #EAECEF;
+    border-radius: 50px;
+  }
+
+  .recipe-tab-btn.active {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+  }
+
+  .recipe-tab-btn::after {
+    display: none;
+  }
+
   .recipe-panel-grid {
-    padding: 30px;
+    padding: 24px;
   }
-  
+
   .recipe-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
-  
+
+  .recipe-meta {
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    padding: 20px 10px;
+  }
+
+  .testimonial-quote {
+    font-size: 1.3rem;
+  }
+
+  /* Footer */
   .newsletter-form {
     flex-direction: column;
+    border-radius: 0;
+    gap: 10px;
   }
-  
+
+  .newsletter-form input {
+    border-radius: 50px;
+  }
+
   .footer-bottom {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     text-align: center;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
   }
 }
