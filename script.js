@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update Price Display
     if (customPriceEl) {
-      customPriceEl.innerText = `$${totalPrice.toFixed(2)}`;
+      customPriceEl.innerText = `₹${totalPrice.toFixed(0)}`;
     }
   };
 

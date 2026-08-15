@@ -263,11 +263,11 @@
             <div class="glow-effect"></div>
             <!-- Dynamic Nutrition Badges -->
             <div class="floating-nutrition-tag" id="nutrient-tag-1">Special Gold Blend</div>
-            <div class="floating-nutrition-tag" id="nutrient-tag-2">No Sweetener</div>
+            <div class="floating-nutrition-tag" id="nutrient-tag-2">250 Grams</div>
           </div>
           <div class="price-container">
-            <span class="price-label">Price per 250g Pack:</span>
-            <span class="price-amount" id="custom-price">$5.00</span>
+            <span class="price-label">Price per Pack:</span>
+            <span class="price-amount" id="custom-price">₹90.00</span>
           </div>
         </div>
 
@@ -279,42 +279,56 @@
               <label class="control-group-title">1. Select Your Tea Base</label>
               <div class="options-grid">
                 <label class="option-card checked">
-                  <input type="radio" name="milk-base" value="cashew" checked data-price="5.00" data-color="#5A4518">
+                  <input type="radio" name="milk-base" value="cashew" checked data-price="0.00" data-color="#5A4518">
                   <span class="option-name">Special Gold Blend</span>
                   <span class="option-desc">Robust & bold flavor</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="milk-base" value="oat" data-price="7.00" data-color="#CFA110">
+                  <input type="radio" name="milk-base" value="oat" data-price="20.00" data-color="#CFA110">
                   <span class="option-name">Princess Regular Blend</span>
                   <span class="option-desc">Aromatic & smooth</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="milk-base" value="almond" data-price="8.00" data-color="#4E8C34">
+                  <input type="radio" name="milk-base" value="almond" data-price="30.00" data-color="#4E8C34">
                   <span class="option-name">Princess Elaichi Blend</span>
                   <span class="option-desc">Light & refreshing</span>
                 </label>
-
               </div>
             </div>
 
-            <!-- Step 2: Sweetener Selection -->
+            <!-- Step 2: Pack Size Selection -->
             <div class="control-group">
-              <label class="control-group-title">2. Choose Natural Sweetener</label>
+              <label class="control-group-title">2. Choose Quantity / Pack Size</label>
               <div class="options-grid grid-3">
+                <label class="option-card">
+                  <input type="radio" name="sweetness" value="10" data-price="10.00">
+                  <span class="option-name">10/- Pack</span>
+                  <span class="option-desc">Single-use sachet</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="sweetness" value="20" data-price="20.00">
+                  <span class="option-name">20/- Pack</span>
+                  <span class="option-desc">Double-use sachet</span>
+                </label>
                 <label class="option-card checked">
-                  <input type="radio" name="sweetness" value="none" checked data-price="0.00">
-                  <span class="option-name">No Sweetener</span>
-                  <span class="option-desc">Pure authentic taste</span>
+                  <input type="radio" name="sweetness" value="250g" checked data-price="90.00">
+                  <span class="option-name">250 Grams</span>
+                  <span class="option-desc">Standard pack</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="sweetness" value="honey" data-price="1.00">
-                  <span class="option-name">Raw Honey</span>
-                  <span class="option-desc">Smooth floral hints</span>
+                  <input type="radio" name="sweetness" value="500g" data-price="175.00">
+                  <span class="option-name">500 Grams</span>
+                  <span class="option-desc">Family pack</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="sweetness" value="stevia" data-price="0.80">
-                  <span class="option-name">Organic Jaggery</span>
-                  <span class="option-desc">Traditional richness</span>
+                  <input type="radio" name="sweetness" value="1kg" data-price="340.00">
+                  <span class="option-name">1 Kg</span>
+                  <span class="option-desc">Bulk pack</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="sweetness" value="2kg" data-price="650.00">
+                  <span class="option-name">2 Kg</span>
+                  <span class="option-desc">Super saver pack</span>
                 </label>
               </div>
             </div>
@@ -324,22 +338,22 @@
               <label class="control-group-title">3. Add Herbs & Spices</label>
               <div class="options-grid">
                 <label class="option-card checkbox-card">
-                  <input type="checkbox" name="booster" value="protein" data-price="0.50">
+                  <input type="checkbox" name="booster" value="protein" data-price="10.00">
                   <span class="option-name"> cardamom Fresh Cardamom</span>
                   <span class="option-desc">Sweet, aromatic spice</span>
                 </label>
                 <label class="option-card checkbox-card">
-                  <input type="checkbox" name="booster" value="d3" data-price="0.40">
+                  <input type="checkbox" name="booster" value="d3" data-price="10.00">
                   <span class="option-name"> ginger Organic Ginger</span>
                   <span class="option-desc">Zesty & warming kick</span>
                 </label>
                 <label class="option-card checkbox-card">
-                  <input type="checkbox" name="booster" value="adaptogens" data-price="0.30">
+                  <input type="checkbox" name="booster" value="adaptogens" data-price="5.00">
                   <span class="option-name"> herb Lemongrass</span>
                   <span class="option-desc">Bright citrus notes</span>
                 </label>
                 <label class="option-card checkbox-card">
-                  <input type="checkbox" name="booster" value="collagen" data-price="2.50">
+                  <input type="checkbox" name="booster" value="collagen" data-price="50.00">
                   <span class="option-name"> star Saffron Strands</span>
                   <span class="option-desc">Luxurious & exotic</span>
                 </label>
