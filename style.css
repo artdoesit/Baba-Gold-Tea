@@ -336,10 +336,10 @@ a {
 
 .bottle-wrapper {
   position: relative;
-  width: 240px;
+  width: 320px;
   height: 240px;
-  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.4));
-  transform: rotate(-15deg);
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.25));
+  transform: none;
   transition: transform 0.1s ease-out;
 }
 
@@ -347,7 +347,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 50%; /* Smooth mask matching generated backdrop shape */
+  border-radius: 16px;
 }
 
 /* Vegan Circular Badge */
@@ -1543,8 +1543,8 @@ a {
   }
   
   .bottle-wrapper {
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 210px;
   }
   
   .vegan-badge {
