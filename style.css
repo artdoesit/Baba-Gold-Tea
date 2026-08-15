@@ -339,7 +339,7 @@ a {
   width: 240px;
   height: 240px;
   filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.4));
-  transform: rotate(-15deg);
+  transform: none;
   transition: transform 0.1s ease-out;
 }
 
