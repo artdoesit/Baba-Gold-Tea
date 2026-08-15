@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milkies - Premium Plant-Based Milks & Products</title>
+  <meta name="description" content="Replicate and experience the premium world of Milkies organic plant-based milks, yogurts, and ice creams. Interactive, sustainable, and organic.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons for UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Announcement Bar / Dynamic Notification -->
+  <div class="announcement-bar">
+    <span>🌱 FREE SHIPPING ON ORDERS OVER $35! TRY OUR NEW CASHEW MILK NOW. 🌱</span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-text">Milkies</span>
+        <span class="logo-trademark">®</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#recipes" class="nav-link">Recipes</a>
+        <a href="#nutrition" class="nav-link">Why Milkies</a>
+        <a href="#customizer" class="nav-link">Build Your Milk</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#customizer" class="btn-outline">Order Now!</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Menu Drawer -->
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close"><i class="fa-solid fa-xmark"></i></button>
+    <nav class="mobile-nav-links">
+      <a href="#products" class="mobile-link">Products</a>
+      <a href="#recipes" class="mobile-link">Recipes</a>
+      <a href="#nutrition" class="mobile-link">Why Milkies</a>
+      <a href="#customizer" class="mobile-link">Build Your Milk</a>
+      <a href="#customizer" class="btn-yellow mobile-order-btn">Order Now!</a>
+    </nav>
+  </div>
+
+  <!-- Main Hero Section (Fold 1) -->
+  <section class="hero-section">
+    <div class="hero-container">
+      
+      <!-- Big Typography Overlay -->
+      <div class="hero-title-wrapper">
+        <h1 class="hero-title-left">Plant</h1>
+        <h1 class="hero-title-right">Milks</h1>
+      </div>
+
+      <!-- Centered Bottle & Floating Badges -->
+      <div class="hero-centerpiece">
+        <!-- Floating Vegan Badge -->
+        <div class="vegan-badge">
+          <div class="badge-icon">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <span class="badge-text">Vegan</span>
+        </div>
+        
+        <!-- Rotating Tilted Bottle -->
+        <div class="bottle-wrapper">
+          <img src="assets/cashew_milk_bottle.jpg" alt="Milkies Organic Cashew Milk" class="hero-bottle-img">
+        </div>
+        
+        <!-- Yellow CTA Shop Button -->
+        <div class="shop-now-container">
+          <a href="#products" class="btn-shop-now">Shop now</a>
+          <!-- Decorative Yellow Splash Droplet -->
+          <div class="yellow-droplet">
+            <svg viewBox="0 0 100 100" class="droplet-svg">
+              <path d="M50,0 C75,40 100,60 100,80 C100,95 75,100 50,100 C25,100 0,95 0,80 C0,60 25,40 50,0 Z" fill="#F3BE0D"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Layout Element: Headline -->
+      <div class="hero-bottom-left">
+        <p class="hero-tagline">Plant-Based, perfect products for everyone.</p>
+      </div>
+
+      <!-- Bottom Layout Element: Product Cards -->
+      <div class="hero-bottom-right" id="products">
+        <div class="product-cards-grid">
+          <!-- Card 1: Yogurt -->
+          <div class="product-card card-yogurt" data-color="#131B3D">
+            <div class="card-info">
+              <h3 class="card-title">Yougurts</h3>
+              <p class="card-price">from $9</p>
+            </div>
+            <div class="card-image-wrapper">
+              <img src="assets/yogurt_cup.jpg" alt="Milkies Coconut Yogurt" class="card-product-img">
+            </div>
+            <div class="card-hover-overlay">
+              <span class="view-details">Quick Add <i class="fa-solid fa-plus"></i></span>
+            </div>
+          </div>
+
+          <!-- Card 2: Plant Milks -->
+          <div class="product-card card-milks" data-color="#729BFC">
+            <div class="card-info">
+              <h3 class="card-title">Plant milks</h3>
+              <p class="card-price">from $12</p>
+            </div>
+            <div class="card-image-wrapper">
+              <img src="assets/milk_carton.jpg" alt="Milkies Plant Milk" class="card-product-img">
+            </div>
+            <div class="card-hover-overlay">
+              <span class="view-details">Quick Add <i class="fa-solid fa-plus"></i></span>
+            </div>
+          </div>
+
+          <!-- Card 3: Ice Cream -->
+          <div class="product-card card-icecream" data-color="#DEC3A7">
+            <div class="card-info">
+              <h3 class="card-title">Ice cream</h3>
+              <p class="card-price">from $10</p>
+            </div>
+            <div class="card-image-wrapper">
+              <img src="assets/ice_cream.jpg" alt="Milkies Ice Cream" class="card-product-img">
+            </div>
+            <div class="card-hover-overlay">
+              <span class="view-details">Quick Add <i class="fa-solid fa-plus"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Nutrition / Comparison Section -->
+  <section class="nutrition-section" id="nutrition">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Pure & Functional</span>
+        <h2 class="section-title">Better for You, Better for the Planet</h2>
+        <p class="section-description">We compared our Milkies Cashew Milk directly with standard animal dairy. See the difference for yourself across health and sustainability factors.</p>
+      </div>
+
+      <div class="nutrition-comparison-grid">
+        <div class="comparison-selectors">
+          <button class="selector-tab active" data-compare="water">
+            <i class="fa-solid fa-droplet"></i>
+            <span>Water Saved</span>
+          </button>
+          <button class="selector-tab" data-compare="co2">
+            <i class="fa-solid fa-cloud"></i>
+            <span>CO2 Reduced</span>
+          </button>
+          <button class="selector-tab" data-compare="calcium">
+            <i class="fa-solid fa-bone"></i>
+            <span>Calcium Boost</span>
+          </button>
+          <button class="selector-tab" data-compare="sugar">
+            <i class="fa-solid fa-cubes"></i>
+            <span>Less Sugar</span>
+          </button>
+        </div>
+
+        <div class="comparison-visualizer">
+          <div class="metric-display-card">
+            <h4 class="metric-label" id="metric-title">Water Usage (per Liter)</h4>
+            <div class="bar-chart-container">
+              <div class="chart-bar-row">
+                <span class="bar-name">Dairy Milk</span>
+                <div class="bar-outer">
+                  <div class="bar-inner dairy-bar" id="dairy-bar" style="width: 100%;"></div>
+                </div>
+                <span class="bar-value" id="dairy-val">650 Liters</span>
+              </div>
+              <div class="chart-bar-row">
+                <span class="bar-name">Milkies Cashew</span>
+                <div class="bar-outer">
+                  <div class="bar-inner milkies-bar" id="milkies-bar" style="width: 15%;"></div>
+                </div>
+                <span class="bar-value" id="milkies-val">98 Liters</span>
+              </div>
+            </div>
+            <p class="comparison-summary" id="comparison-text">Milkies Cashew Milk uses 85% less water than dairy, saving precious resources with every glass.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Customizer Section: "Build Your Own Milk" -->
+  <section class="customizer-section" id="customizer">
+    <!-- Fluid Wave Top Transition -->
+    <div class="wave-transition-top">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z" fill="#131B3D"/>
+      </svg>
+    </div>
+
+    <div class="customizer-wrapper">
+      <div class="section-header text-white">
+        <span class="section-tag tag-yellow">Tailored Nutrition</span>
+        <h2 class="section-title">Build Your Own Custom Milk</h2>
+        <p class="section-description">Choose your plant base, sweetness level, and functional boosters. We'll blend it, bottle it, and ship it straight to your doorstep.</p>
+      </div>
+
+      <div class="customizer-interactive-grid">
+        <!-- Bottle Preview Panel -->
+        <div class="preview-panel">
+          <div class="custom-bottle-container">
+            <img src="assets/cashew_milk_bottle.jpg" alt="Custom Milk Bottle Mockup" class="custom-bottle-img" id="custom-bottle-img">
+            <div class="glow-effect"></div>
+            <!-- Dynamic Nutrition Badges -->
+            <div class="floating-nutrition-tag" id="nutrient-tag-1">Cashew Base</div>
+            <div class="floating-nutrition-tag" id="nutrient-tag-2">Unsweetened</div>
+          </div>
+          <div class="price-container">
+            <span class="price-label">Price per Bottle:</span>
+            <span class="price-amount" id="custom-price">$12.00</span>
+          </div>
+        </div>
+
+        <!-- Customizer Controls Panel -->
+        <div class="controls-panel">
+          <form id="custom-milk-form" onsubmit="event.preventDefault();">
+            <!-- Step 1: Base Selection -->
+            <div class="control-group">
+              <label class="control-group-title">1. Select Your Base</label>
+              <div class="options-grid">
+                <label class="option-card checked">
+                  <input type="radio" name="milk-base" value="cashew" checked data-price="12.00" data-color="#E8DFD4">
+                  <span class="option-name">Cashew Cream</span>
+                  <span class="option-desc">Rich & velvety</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="milk-base" value="oat" data-price="11.00" data-color="#F2EBD9">
+                  <span class="option-name">Creamy Oat</span>
+                  <span class="option-desc">Sweet & smooth</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="milk-base" value="almond" data-price="11.50" data-color="#ECE2D0">
+                  <span class="option-name">Pure Almond</span>
+                  <span class="option-desc">Nutty & light</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="milk-base" value="coconut" data-price="12.50" data-color="#FDFBF7">
+                  <span class="option-name">Coconut Milk</span>
+                  <span class="option-desc">Tropical & thick</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 2: Sweetener Selection -->
+            <div class="control-group">
+              <label class="control-group-title">2. Choose Sweetness</label>
+              <div class="options-grid grid-3">
+                <label class="option-card checked">
+                  <input type="radio" name="sweetness" value="none" checked data-price="0.00">
+                  <span class="option-name">Unsweetened</span>
+                  <span class="option-desc">0g added sugar</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="sweetness" value="honey" data-price="0.75">
+                  <span class="option-name">Maple / Honey</span>
+                  <span class="option-desc">Natural hints</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="sweetness" value="stevia" data-price="0.50">
+                  <span class="option-name">Organic Stevia</span>
+                  <span class="option-desc">Zero calories</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 3: Boosters Selection -->
+            <div class="control-group">
+              <label class="control-group-title">3. Add Functional Boosters (+$1.50 each)</label>
+              <div class="options-grid">
+                <label class="option-card checkbox-card">
+                  <input type="checkbox" name="booster" value="protein" data-price="1.50">
+                  <span class="option-name">💪 Plant Protein</span>
+                  <span class="option-desc">+10g Pea Protein</span>
+                </label>
+                <label class="option-card checkbox-card">
+                  <input type="checkbox" name="booster" value="d3" data-price="1.50">
+                  <span class="option-name">☀️ Vitamin D3 & B12</span>
+                  <span class="option-desc">Energy & bone health</span>
+                </label>
+                <label class="option-card checkbox-card">
+                  <input type="checkbox" name="booster" value="adaptogens" data-price="1.50">
+                  <span class="option-name">🧠 Ashwagandha</span>
+                  <span class="option-desc">Stress & focus relief</span>
+                </label>
+                <label class="option-card checkbox-card">
+                  <input type="checkbox" name="booster" value="collagen" data-price="1.50">
+                  <span class="option-name">✨ Vegan Collagen</span>
+                  <span class="option-desc">Glow & joint support</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="button" class="btn-yellow btn-large" id="btn-add-custom">Add Custom Blend to Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fluid Wave Bottom Transition -->
+    <div class="wave-transition-bottom">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z" fill="#131B3D"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Interactive Recipes Section -->
+  <section class="recipes-section" id="recipes">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Cook with Milkies</span>
+        <h2 class="section-title">Delicious Plant-Based Recipes</h2>
+        <p class="section-description">Unleash the full potential of Milkies in your kitchen. From morning coffee to vegan dinners, discover simple yet delightful recipes.</p>
+      </div>
+
+      <div class="recipes-tabs-container">
+        <!-- Recipe Tab Toggles -->
+        <div class="recipes-tabs-header">
+          <button class="recipe-tab-btn active" data-recipe="matcha">
+            <span>Matcha Latte</span>
+          </button>
+          <button class="recipe-tab-btn" data-recipe="smoothie">
+            <span>Berry Smoothie Bowl</span>
+          </button>
+          <button class="recipe-tab-btn" data-recipe="chowder">
+            <span>Creamy Corn Chowder</span>
+          </button>
+        </div>
+
+        <!-- Recipe Content Cards -->
+        <div class="recipe-content-wrapper">
+          <!-- Recipe 1: Matcha Latte -->
+          <div class="recipe-content-panel active" id="recipe-matcha">
+            <div class="recipe-panel-grid">
+              <div class="recipe-details">
+                <h3 class="recipe-name">Organic Cashew Matcha Latte</h3>
+                <div class="recipe-meta">
+                  <span><i class="fa-regular fa-clock"></i> 5 mins</span>
+                  <span><i class="fa-solid fa-fire-flame-simple"></i> Easy</span>
+                  <span><i class="fa-solid fa-leaf"></i> 100% Vegan</span>
+                </div>
+                <p class="recipe-desc">A rich, creamy, and antioxidant-packed latte powered by Milkies Cashew Milk. Perfect for a clean morning energy boost without the coffee crash.</p>
+                
+                <div class="serving-selector-wrapper">
+                  <span class="serving-label">Servings:</span>
+                  <button class="serving-btn minus-btn">-</button>
+                  <span class="serving-count" id="serving-count-matcha">2</span>
+                  <button class="serving-btn plus-btn">+</button>
+                </div>
+
+                <h4 class="ingredients-title">Ingredients:</h4>
+                <ul class="ingredients-list" id="ingredients-matcha" data-servings="2">
+                  <li data-base="1.5"><span>1.5</span> cups of Milkies Cashew Milk</li>
+                  <li data-base="1"><span>1</span> tsp Ceremonial Grade Matcha powder</li>
+                  <li data-base="1"><span>1</span> tbsp Maple Syrup (optional)</li>
+                  <li data-base="0.25"><span>0.25</span> cup hot water (not boiling)</li>
+                </ul>
+              </div>
+              <div class="recipe-steps">
+                <h4 class="steps-title">Instructions:</h4>
+                <ol class="steps-list">
+                  <li>Sift the matcha powder into a bowl to remove any clumps.</li>
+                  <li>Add hot water and whisk vigorously in a W-motion using a bamboo whisk until frothy.</li>
+                  <li>Warm your Milkies Cashew Milk in a small saucepan, then froth it using a hand frother.</li>
+                  <li>Pour the sweetened Cashew Milk into a mug, then gently pour the frothy matcha on top. Enjoy!</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recipe 2: Smoothie Bowl -->
+          <div class="recipe-content-panel" id="recipe-smoothie">
+            <div class="recipe-panel-grid">
+              <div class="recipe-details">
+                <h3 class="recipe-name">Almond Berry Smoothie Bowl</h3>
+                <div class="recipe-meta">
+                  <span><i class="fa-regular fa-clock"></i> 8 mins</span>
+                  <span><i class="fa-solid fa-fire-flame-simple"></i> Easy</span>
+                  <span><i class="fa-solid fa-leaf"></i> High Fiber</span>
+                </div>
+                <p class="recipe-desc">Thick, spoonable berry smoothie blended with Milkies Almond Milk, topped with fresh fruit, chia seeds, and granola for a perfect texture contrast.</p>
+                
+                <div class="serving-selector-wrapper">
+                  <span class="serving-label">Servings:</span>
+                  <button class="serving-btn minus-btn">-</button>
+                  <span class="serving-count" id="serving-count-smoothie">1</span>
+                  <button class="serving-btn plus-btn">+</button>
+                </div>
+
+                <h4 class="ingredients-title">Ingredients:</h4>
+                <ul class="ingredients-list" id="ingredients-smoothie" data-servings="1">
+                  <li data-base="0.5"><span>0.5</span> cup of Milkies Almond Milk</li>
+                  <li data-base="1"><span>1</span> cup frozen mixed berries</li>
+                  <li data-base="1"><span>1</span> frozen banana</li>
+                  <li data-base="1"><span>1</span> tbsp chia seeds</li>
+                  <li data-base="0.25"><span>0.25</span> cup granola (for topping)</li>
+                </ul>
+              </div>
+              <div class="recipe-steps">
+                <h4 class="steps-title">Instructions:</h4>
+                <ol class="steps-list">
+                  <li>Add Milkies Almond Milk, frozen berries, and frozen banana to a high-speed blender.</li>
+                  <li>Blend on high, using a tamper if necessary, until completely smooth and thick.</li>
+                  <li>Pour the smoothie mixture into a shallow bowl.</li>
+                  <li>Arrange the granola, fresh berries, and chia seeds neatly on top. Serve immediately!</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recipe 3: Chowder -->
+          <div class="recipe-content-panel" id="recipe-chowder">
+            <div class="recipe-panel-grid">
+              <div class="recipe-details">
+                <h3 class="recipe-name">Creamy Corn Chowder</h3>
+                <div class="recipe-meta">
+                  <span><i class="fa-regular fa-clock"></i> 25 mins</span>
+                  <span><i class="fa-solid fa-fire-flame-simple"></i> Medium</span>
+                  <span><i class="fa-solid fa-leaf"></i> Hearty</span>
+                </div>
+                <p class="recipe-desc">A comforting, rich, dairy-free chowder made naturally thick and sweet by incorporating Milkies Oat Milk, fresh sweet corn, and gold potatoes.</p>
+                
+                <div class="serving-selector-wrapper">
+                  <span class="serving-label">Servings:</span>
+                  <button class="serving-btn minus-btn">-</button>
+                  <span class="serving-count" id="serving-count-chowder">4</span>
+                  <button class="serving-btn plus-btn">+</button>
+                </div>
+
+                <h4 class="ingredients-title">Ingredients:</h4>
+                <ul class="ingredients-list" id="ingredients-chowder" data-servings="4">
+                  <li data-base="3"><span>3</span> cups of Milkies Oat Milk</li>
+                  <li data-base="3"><span>3</span> cups fresh or frozen sweet corn kernels</li>
+                  <li data-base="2"><span>2</span> medium gold potatoes (diced)</li>
+                  <li data-base="1"><span>1</span> small yellow onion (diced)</li>
+                  <li data-base="2"><span>2</span> cloves garlic (minced)</li>
+                  <li data-base="2"><span>2</span> tbsp olive oil</li>
+                </ul>
+              </div>
+              <div class="recipe-steps">
+                <h4 class="steps-title">Instructions:</h4>
+                <ol class="steps-list">
+                  <li>Sauté the onion and garlic in olive oil in a large pot until soft and fragrant.</li>
+                  <li>Add the diced potatoes, corn kernels, and vegetable stock. Simmer for 15 minutes until potatoes are tender.</li>
+                  <li>Pour in the Milkies Oat Milk and bring to a light simmer. Do not boil.</li>
+                  <li>Blend half of the soup in a blender and pour back into the pot for a thick, chunky texture. Season with salt, pepper, and fresh chives.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Loved by Thousands</span>
+        <h2 class="section-title">What the Milkies Community Says</h2>
+      </div>
+
+      <div class="testimonials-slider-container">
+        <div class="testimonial-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card active">
+            <div class="stars-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"The cashew milk is hands-down the best plant milk I've ever had. It froths up perfectly for my lattes and the taste is incredibly rich."</p>
+            <div class="testimonial-user">
+              <div class="user-avatar" style="background-color: #729BFC;">S</div>
+              <div class="user-info">
+                <span class="user-name">Sarah Jenkins</span>
+                <span class="user-role">Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"My kids are obsessed with the Milkies Ice Cream. They can't even tell it's dairy-free, and it doesn't leave that heavy feeling. Absolutely outstanding."</p>
+            <div class="testimonial-user">
+              <div class="user-avatar" style="background-color: #DEC3A7;">M</div>
+              <div class="user-info">
+                <span class="user-name">Marcus Brody</span>
+                <span class="user-role">Parent & Health Advocate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Being able to build my own milk blend is a game changer. I add protein and ashwagandha to my oat base, and it saves me buying supplements separately."</p>
+            <div class="testimonial-user">
+              <div class="user-avatar" style="background-color: #131B3D; color: white;">E</div>
+              <div class="user-info">
+                <span class="user-name">Elena Rostova</span>
+                <span class="user-role">Fitness Trainer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn prev-btn" aria-label="Previous Review"><i class="fa-solid fa-arrow-left"></i></button>
+          <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="slider-btn next-btn" aria-label="Next Review"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter & Footer Section -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-text">Milkies</span>
+            <span class="logo-trademark">®</span>
+          </a>
+          <p class="footer-tagline">Making plant-based nutrition premium, accessible, and delicious for everyone.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Join the Milkies Club</h4>
+          <p>Subscribe for exclusive recipes, product launches, and 15% off your first order.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing! Check your email for your 15% off discount code.'); this.reset();">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn-yellow">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Artdoesit.ai. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Popup Toast (Interactive Feedback) -->
+  <div class="toast-notification" id="toast-message">
+    <i class="fa-solid fa-circle-check"></i>
+    <span class="toast-text">Product added to cart successfully!</span>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
