@@ -801,7 +801,14 @@ a {
   width: 280px;
   height: 280px;
   margin-bottom: 30px;
-  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.3));
+  background-color: #d9d2e9;
+  border-radius: 28px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.4), 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .custom-bottle-img {
