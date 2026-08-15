@@ -4,7 +4,7 @@
 
 /* Reset & Variables */
 :root {
-  --primary-blue: #184FD8;      /* Royal blue background */
+  --primary-blue: #C3122F;      /* Crimson theme background */
   --dark-navy: #131B3D;         /* Dark container backgrounds & text */
   --accent-yellow: #F3BE0D;     /* Milkies brand yellow */
   --logo-yellow: #EAD024;       /* Logo yellow */
@@ -82,14 +82,13 @@ a {
 .main-header {
   background-color: var(--primary-blue);
   padding: 20px 0;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 99;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .main-header.scrolled {
-  background-color: rgba(24, 79, 216, 0.95);
+  background-color: rgba(195, 18, 47, 0.95);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
@@ -118,6 +117,12 @@ a {
 
 .logo:hover {
   transform: scale(1.05);
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo-trademark {
@@ -331,8 +336,8 @@ a {
 
 .bottle-wrapper {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 240px;
+  height: 240px;
   filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.4));
   transform: rotate(-15deg);
   transition: transform 0.1s ease-out;
@@ -474,7 +479,7 @@ a {
   flex: 1;
   border-radius: 28px;
   padding: 24px;
-  height: 280px;
+  height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -490,9 +495,17 @@ a {
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
 }
 
-.card-yogurt { background-color: var(--dark-navy); color: var(--text-light); }
-.card-milks { background-color: var(--light-blue); color: var(--dark-navy); }
-.card-icecream { background-color: var(--beige); color: var(--dark-navy); }
+.card-tea { background-color: #5A4518; color: var(--text-light); }
+.card-princess-tea {
+  background: linear-gradient(135deg, #1C3F24 0%, #0F2A16 100%), url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  background-blend-mode: overlay;
+  color: var(--text-light);
+}
+.card-princess-elaichi-tea {
+  background: linear-gradient(135deg, #F0C419 0%, #CFA110 100%), url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E");
+  background-blend-mode: overlay;
+  color: var(--dark-navy);
+}
 
 .card-info {
   z-index: 2;
@@ -513,7 +526,7 @@ a {
 
 .card-image-wrapper {
   width: 100%;
-  height: 150px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1565,7 +1578,11 @@ a {
   }
   
   .product-card {
-    height: 240px;
+    height: 300px;
+  }
+  
+  .card-image-wrapper {
+    height: 170px;
   }
 
   /* Dashboard widgets */

@@ -28,10 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       titleRight.style.transform = `translateX(${scrolled * 0.15}px) rotate(${3 + scrolled * 0.005}deg)`;
     }
 
-    // Scroll movement on central bottle
-    if (bottle) {
-      bottle.style.transform = `translateY(${scrolled * 0.25}px) rotate(${-15 + scrolled * 0.06}deg)`;
-    }
+
   });
 
 
