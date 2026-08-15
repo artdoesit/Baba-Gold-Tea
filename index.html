@@ -3,8 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milkies - Premium Plant-Based Milks & Products</title>
-  <meta name="description" content="Replicate and experience the premium world of Milkies organic plant-based milks, Special Gold Tea, and ice creams. Interactive, sustainable, and organic.">
+  <title>Baba Gold - Premium Indian Tea & Loose Leaf Blends</title>
+  <meta name="description" content="Experience the rich flavor, authentic aroma, and hand-picked quality of Baba Gold. Discover our premium CTC tea, loose leaf cardamom tea, and exclusive blends.">
+  <link rel="canonical" href="https://github.com/artdoesit/Baba-Gold-Tea">
+  
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Baba Gold - Premium Indian Tea & Loose Leaf Blends">
+  <meta property="og:description" content="Experience the rich flavor, authentic aroma, and hand-picked quality of Baba Gold. Discover our premium CTC tea, loose leaf cardamom tea, and exclusive blends.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/artdoesit/Baba-Gold-Tea">
+  <meta property="og:image" content="assets/centerpiece.png">
+  <meta property="og:site_name" content="Baba Gold Tea">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Baba Gold - Premium Indian Tea & Loose Leaf Blends">
+  <meta name="twitter:description" content="Experience the rich flavor, authentic aroma, and hand-picked quality of Baba Gold. Discover our premium CTC tea, loose leaf cardamom tea, and exclusive blends.">
+  <meta name="twitter:image" content="assets/centerpiece.png">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://github.com/artdoesit/Baba-Gold-Tea/#organization",
+        "name": "Baba Gold Tea",
+        "url": "https://github.com/artdoesit/Baba-Gold-Tea",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "assets/logo.png"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://github.com/artdoesit/Baba-Gold-Tea/#website",
+        "url": "https://github.com/artdoesit/Baba-Gold-Tea",
+        "name": "Baba Gold Tea",
+        "publisher": {
+          "@id": "https://github.com/artdoesit/Baba-Gold-Tea/#organization"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "Baba Gold Premium Tea Leaves",
+        "image": "assets/centerpiece.png",
+        "description": "Authentic premium loose leaf and CTC Indian tea blends hand-picked for exquisite aroma and taste.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Baba Gold"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "5.00",
+          "highPrice": "12.00",
+          "offerCount": "3"
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -129,58 +190,58 @@
   <section class="nutrition-section" id="nutrition">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">Pure & Functional</span>
-        <h2 class="section-title">Better for You, Better for the Planet</h2>
-        <p class="section-description">We compared our Milkies Cashew Milk directly with standard animal dairy. See the difference for yourself across health and sustainability factors.</p>
+        <span class="section-tag">Pure & Artisanal</span>
+        <h2 class="section-title">Uncompromising Quality, Hand-Picked for You</h2>
+        <p class="section-description">We compare our premium loose leaf tea directly with standard mass-produced commercial tea bags. See the difference in quality, purity, and environmental impact.</p>
       </div>
 
       <div class="nutrition-comparison-grid">
         <div class="comparison-selectors">
           <button class="selector-tab active" data-compare="water">
-            <i class="fa-solid fa-droplet"></i>
-            <span>Water Saved</span>
+            <i class="fa-solid fa-seedling"></i>
+            <span>Organic Purity</span>
           </button>
           <button class="selector-tab" data-compare="co2">
-            <i class="fa-solid fa-cloud"></i>
-            <span>CO2 Reduced</span>
+            <i class="fa-solid fa-leaf"></i>
+            <span>Whole Leaf</span>
           </button>
           <button class="selector-tab" data-compare="calcium">
-            <i class="fa-solid fa-bone"></i>
-            <span>Calcium Boost</span>
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Antioxidants</span>
           </button>
           <button class="selector-tab" data-compare="sugar">
-            <i class="fa-solid fa-cubes"></i>
-            <span>Less Sugar</span>
+            <i class="fa-solid fa-wine-glass"></i>
+            <span>Pure Flavor</span>
           </button>
         </div>
 
         <div class="comparison-visualizer">
           <div class="metric-display-card">
-            <h4 class="metric-label" id="metric-title">Water Usage (per Liter)</h4>
+            <h4 class="metric-label" id="metric-title">Purity & Sourcing</h4>
             <div class="bar-chart-container">
               <div class="chart-bar-row">
-                <span class="bar-name">Dairy Milk</span>
+                <span class="bar-name">Commercial Bags</span>
                 <div class="bar-outer">
                   <div class="bar-inner dairy-bar" id="dairy-bar" style="width: 100%;"></div>
                 </div>
-                <span class="bar-value" id="dairy-val">650 Liters</span>
+                <span class="bar-value" id="dairy-val">Pesticides Present</span>
               </div>
               <div class="chart-bar-row">
-                <span class="bar-name">Milkies Cashew</span>
+                <span class="bar-name">Baba Gold Tea</span>
                 <div class="bar-outer">
-                  <div class="bar-inner milkies-bar" id="milkies-bar" style="width: 15%;"></div>
+                  <div class="bar-inner milkies-bar" id="milkies-bar" style="width: 100%;"></div>
                 </div>
-                <span class="bar-value" id="milkies-val">98 Liters</span>
+                <span class="bar-value" id="milkies-val">100% Pesticide-Free</span>
               </div>
             </div>
-            <p class="comparison-summary" id="comparison-text">Milkies Cashew Milk uses 85% less water than dairy, saving precious resources with every glass.</p>
+            <p class="comparison-summary" id="comparison-text">Baba Gold tea leaves are 100% organic and pesticide-free, grown with sustainable farming practices compared to mass-produced commercial blends.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Customizer Section: "Build Your Own Milk" -->
+  <!-- Interactive Customizer Section: "Blend Your Perfect Cup" -->
   <section class="customizer-section" id="customizer">
     <!-- Fluid Wave Top Transition -->
     <div class="wave-transition-top">
@@ -191,24 +252,24 @@
 
     <div class="customizer-wrapper">
       <div class="section-header text-white">
-        <span class="section-tag tag-yellow">Tailored Nutrition</span>
-        <h2 class="section-title">Build Your Own Custom Milk</h2>
-        <p class="section-description">Choose your plant base, sweetness level, and functional boosters. We'll blend it, bottle it, and ship it straight to your doorstep.</p>
+        <span class="section-tag tag-yellow">Tailored Blend</span>
+        <h2 class="section-title">Blend Your Perfect Cup</h2>
+        <p class="section-description">Choose your premium tea base, your preferred natural sweetener, and organic spices. We'll custom-blend it fresh and ship it to your doorstep.</p>
       </div>
 
       <div class="customizer-interactive-grid">
         <!-- Bottle Preview Panel -->
         <div class="preview-panel">
           <div class="custom-bottle-container">
-            <img src="assets/cashew_milk_bottle.jpg" alt="Custom Milk Bottle Mockup" class="custom-bottle-img" id="custom-bottle-img">
+            <img src="assets/baba_gold_tea.png" alt="Custom Tea Pack Mockup" class="custom-bottle-img" id="custom-bottle-img">
             <div class="glow-effect"></div>
             <!-- Dynamic Nutrition Badges -->
-            <div class="floating-nutrition-tag" id="nutrient-tag-1">Cashew Base</div>
-            <div class="floating-nutrition-tag" id="nutrient-tag-2">Unsweetened</div>
+            <div class="floating-nutrition-tag" id="nutrient-tag-1">Premium CTC</div>
+            <div class="floating-nutrition-tag" id="nutrient-tag-2">No Sweetener</div>
           </div>
           <div class="price-container">
-            <span class="price-label">Price per Bottle:</span>
-            <span class="price-amount" id="custom-price">$12.00</span>
+            <span class="price-label">Price per 250g Pack:</span>
+            <span class="price-amount" id="custom-price">$5.00</span>
           </div>
         </div>
 
@@ -217,76 +278,76 @@
           <form id="custom-milk-form" onsubmit="event.preventDefault();">
             <!-- Step 1: Base Selection -->
             <div class="control-group">
-              <label class="control-group-title">1. Select Your Base</label>
+              <label class="control-group-title">1. Select Your Tea Base</label>
               <div class="options-grid">
                 <label class="option-card checked">
-                  <input type="radio" name="milk-base" value="cashew" checked data-price="12.00" data-color="#E8DFD4">
-                  <span class="option-name">Cashew Cream</span>
-                  <span class="option-desc">Rich & velvety</span>
+                  <input type="radio" name="milk-base" value="cashew" checked data-price="5.00" data-color="#5A4518">
+                  <span class="option-name">Premium CTC</span>
+                  <span class="option-desc">Robust & bold flavor</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="milk-base" value="oat" data-price="11.00" data-color="#F2EBD9">
-                  <span class="option-name">Creamy Oat</span>
-                  <span class="option-desc">Sweet & smooth</span>
+                  <input type="radio" name="milk-base" value="oat" data-price="7.00" data-color="#CFA110">
+                  <span class="option-name">Golden Leaf Special</span>
+                  <span class="option-desc">Aromatic & smooth</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="milk-base" value="almond" data-price="11.50" data-color="#ECE2D0">
-                  <span class="option-name">Pure Almond</span>
-                  <span class="option-desc">Nutty & light</span>
+                  <input type="radio" name="milk-base" value="almond" data-price="8.00" data-color="#4E8C34">
+                  <span class="option-name">Darjeeling Green</span>
+                  <span class="option-desc">Light & refreshing</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="milk-base" value="coconut" data-price="12.50" data-color="#FDFBF7">
-                  <span class="option-name">Coconut Milk</span>
-                  <span class="option-desc">Tropical & thick</span>
+                  <input type="radio" name="milk-base" value="coconut" data-price="9.00" data-color="#8C5815">
+                  <span class="option-name">Roasted Oolong</span>
+                  <span class="option-desc">Earthy & rich notes</span>
                 </label>
               </div>
             </div>
 
             <!-- Step 2: Sweetener Selection -->
             <div class="control-group">
-              <label class="control-group-title">2. Choose Sweetness</label>
+              <label class="control-group-title">2. Choose Natural Sweetener</label>
               <div class="options-grid grid-3">
                 <label class="option-card checked">
                   <input type="radio" name="sweetness" value="none" checked data-price="0.00">
-                  <span class="option-name">Unsweetened</span>
-                  <span class="option-desc">0g added sugar</span>
+                  <span class="option-name">No Sweetener</span>
+                  <span class="option-desc">Pure authentic taste</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="sweetness" value="honey" data-price="0.75">
-                  <span class="option-name">Maple / Honey</span>
-                  <span class="option-desc">Natural hints</span>
+                  <input type="radio" name="sweetness" value="honey" data-price="1.00">
+                  <span class="option-name">Raw Honey</span>
+                  <span class="option-desc">Smooth floral hints</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="sweetness" value="stevia" data-price="0.50">
-                  <span class="option-name">Organic Stevia</span>
-                  <span class="option-desc">Zero calories</span>
+                  <input type="radio" name="sweetness" value="stevia" data-price="0.80">
+                  <span class="option-name">Organic Jaggery</span>
+                  <span class="option-desc">Traditional richness</span>
                 </label>
               </div>
             </div>
 
             <!-- Step 3: Boosters Selection -->
             <div class="control-group">
-              <label class="control-group-title">3. Add Functional Boosters (+$1.50 each)</label>
+              <label class="control-group-title">3. Add Herbs & Spices</label>
               <div class="options-grid">
                 <label class="option-card checkbox-card">
-                  <input type="checkbox" name="booster" value="protein" data-price="1.50">
-                  <span class="option-name">💪 Plant Protein</span>
-                  <span class="option-desc">+10g Pea Protein</span>
+                  <input type="checkbox" name="booster" value="protein" data-price="0.50">
+                  <span class="option-name"> cardamom Fresh Cardamom</span>
+                  <span class="option-desc">Sweet, aromatic spice</span>
                 </label>
                 <label class="option-card checkbox-card">
-                  <input type="checkbox" name="booster" value="d3" data-price="1.50">
-                  <span class="option-name">☀️ Vitamin D3 & B12</span>
-                  <span class="option-desc">Energy & bone health</span>
+                  <input type="checkbox" name="booster" value="d3" data-price="0.40">
+                  <span class="option-name"> ginger Organic Ginger</span>
+                  <span class="option-desc">Zesty & warming kick</span>
                 </label>
                 <label class="option-card checkbox-card">
-                  <input type="checkbox" name="booster" value="adaptogens" data-price="1.50">
-                  <span class="option-name">🧠 Ashwagandha</span>
-                  <span class="option-desc">Stress & focus relief</span>
+                  <input type="checkbox" name="booster" value="adaptogens" data-price="0.30">
+                  <span class="option-name"> herb Lemongrass</span>
+                  <span class="option-desc">Bright citrus notes</span>
                 </label>
                 <label class="option-card checkbox-card">
-                  <input type="checkbox" name="booster" value="collagen" data-price="1.50">
-                  <span class="option-name">✨ Vegan Collagen</span>
-                  <span class="option-desc">Glow & joint support</span>
+                  <input type="checkbox" name="booster" value="collagen" data-price="2.50">
+                  <span class="option-name"> star Saffron Strands</span>
+                  <span class="option-desc">Luxurious & exotic</span>
                 </label>
               </div>
             </div>
@@ -309,38 +370,38 @@
   <section class="recipes-section" id="recipes">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">Cook with Milkies</span>
-        <h2 class="section-title">Delicious Plant-Based Recipes</h2>
-        <p class="section-description">Unleash the full potential of Milkies in your kitchen. From morning coffee to vegan dinners, discover simple yet delightful recipes.</p>
+        <span class="section-tag">Brew with Baba Gold</span>
+        <h2 class="section-title">Delicious Tea Brewing Recipes</h2>
+        <p class="section-description">Unleash the full potential of Baba Gold teas in your kitchen. From rich morning chai to soothing herbal brews, discover simple yet delightful recipes.</p>
       </div>
 
       <div class="recipes-tabs-container">
         <!-- Recipe Tab Toggles -->
         <div class="recipes-tabs-header">
           <button class="recipe-tab-btn active" data-recipe="matcha">
-            <span>Matcha Latte</span>
+            <span>Royal Cardamom Chai</span>
           </button>
           <button class="recipe-tab-btn" data-recipe="smoothie">
-            <span>Berry Smoothie Bowl</span>
+            <span>Classic Masala Ginger</span>
           </button>
           <button class="recipe-tab-btn" data-recipe="chowder">
-            <span>Creamy Corn Chowder</span>
+            <span>Golden Amber Brew</span>
           </button>
         </div>
 
         <!-- Recipe Content Cards -->
         <div class="recipe-content-wrapper">
-          <!-- Recipe 1: Matcha Latte -->
+          <!-- Recipe 1: Royal Cardamom Chai -->
           <div class="recipe-content-panel active" id="recipe-matcha">
             <div class="recipe-panel-grid">
               <div class="recipe-details">
-                <h3 class="recipe-name">Organic Cashew Matcha Latte</h3>
+                <h3 class="recipe-name">Royal Cardamom Chai</h3>
                 <div class="recipe-meta">
                   <span><i class="fa-regular fa-clock"></i> 5 mins</span>
                   <span><i class="fa-solid fa-fire-flame-simple"></i> Easy</span>
-                  <span><i class="fa-solid fa-leaf"></i> 100% Vegan</span>
+                  <span><i class="fa-solid fa-leaf"></i> 100% Organic</span>
                 </div>
-                <p class="recipe-desc">A rich, creamy, and antioxidant-packed latte powered by Milkies Cashew Milk. Perfect for a clean morning energy boost without the coffee crash.</p>
+                <p class="recipe-desc">A rich, aromatic, and warming chai infused with fresh cardamom and premium CTC tea. Perfect for starting your day with authentic Indian flavors.</p>
                 
                 <div class="serving-selector-wrapper">
                   <span class="serving-label">Servings:</span>
@@ -351,35 +412,35 @@
 
                 <h4 class="ingredients-title">Ingredients:</h4>
                 <ul class="ingredients-list" id="ingredients-matcha" data-servings="2">
-                  <li data-base="1.5"><span>1.5</span> cups of Milkies Cashew Milk</li>
-                  <li data-base="1"><span>1</span> tsp Ceremonial Grade Matcha powder</li>
-                  <li data-base="1"><span>1</span> tbsp Maple Syrup (optional)</li>
-                  <li data-base="0.25"><span>0.25</span> cup hot water (not boiling)</li>
+                  <li data-base="1.5"><span>1.5</span> cups of hot water</li>
+                  <li data-base="1"><span>1</span> cup of milk (or oat milk)</li>
+                  <li data-base="2"><span>2</span> tsp Princess Elaichi Tea leaves</li>
+                  <li data-base="1"><span>1</span> tsp organic sweetener (jaggery/sugar)</li>
                 </ul>
               </div>
               <div class="recipe-steps">
                 <h4 class="steps-title">Instructions:</h4>
                 <ol class="steps-list">
-                  <li>Sift the matcha powder into a bowl to remove any clumps.</li>
-                  <li>Add hot water and whisk vigorously in a W-motion using a bamboo whisk until frothy.</li>
-                  <li>Warm your Milkies Cashew Milk in a small saucepan, then froth it using a hand frother.</li>
-                  <li>Pour the sweetened Cashew Milk into a mug, then gently pour the frothy matcha on top. Enjoy!</li>
+                  <li>Bring water and Princess Elaichi Tea to a rolling boil in a tea saucepan.</li>
+                  <li>Simmer for 3 minutes to extract the full flavor and cardamom aroma.</li>
+                  <li>Add milk and organic sweetener, then bring to a boil.</li>
+                  <li>Strain into your favorite teacup and serve piping hot!</li>
                 </ol>
               </div>
             </div>
           </div>
 
-          <!-- Recipe 2: Smoothie Bowl -->
+          <!-- Recipe 2: Classic Masala Ginger -->
           <div class="recipe-content-panel" id="recipe-smoothie">
             <div class="recipe-panel-grid">
               <div class="recipe-details">
-                <h3 class="recipe-name">Almond Berry Smoothie Bowl</h3>
+                <h3 class="recipe-name">Classic Masala Ginger Tea</h3>
                 <div class="recipe-meta">
                   <span><i class="fa-regular fa-clock"></i> 8 mins</span>
                   <span><i class="fa-solid fa-fire-flame-simple"></i> Easy</span>
-                  <span><i class="fa-solid fa-leaf"></i> High Fiber</span>
+                  <span><i class="fa-solid fa-leaf"></i> Warming</span>
                 </div>
-                <p class="recipe-desc">Thick, spoonable berry smoothie blended with Milkies Almond Milk, topped with fresh fruit, chia seeds, and granola for a perfect texture contrast.</p>
+                <p class="recipe-desc">A robust, spicy, and soothing black tea brewed with fresh crushed ginger and aromatic whole spices for an extra strong kick.</p>
                 
                 <div class="serving-selector-wrapper">
                   <span class="serving-label">Servings:</span>
@@ -390,36 +451,36 @@
 
                 <h4 class="ingredients-title">Ingredients:</h4>
                 <ul class="ingredients-list" id="ingredients-smoothie" data-servings="1">
-                  <li data-base="0.5"><span>0.5</span> cup of Milkies Almond Milk</li>
-                  <li data-base="1"><span>1</span> cup frozen mixed berries</li>
-                  <li data-base="1"><span>1</span> frozen banana</li>
-                  <li data-base="1"><span>1</span> tbsp chia seeds</li>
-                  <li data-base="0.25"><span>0.25</span> cup granola (for topping)</li>
+                  <li data-base="1"><span>1</span> cup of water</li>
+                  <li data-base="0.5"><span>0.5</span> cup of milk</li>
+                  <li data-base="1.5"><span>1.5</span> tsp Princess Regular Tea leaves</li>
+                  <li data-base="0.5"><span>0.5</span> inch of fresh ginger (crushed)</li>
+                  <li data-base="1"><span>1</span> piece of cinnamon/clove</li>
                 </ul>
               </div>
               <div class="recipe-steps">
                 <h4 class="steps-title">Instructions:</h4>
                 <ol class="steps-list">
-                  <li>Add Milkies Almond Milk, frozen berries, and frozen banana to a high-speed blender.</li>
-                  <li>Blend on high, using a tamper if necessary, until completely smooth and thick.</li>
-                  <li>Pour the smoothie mixture into a shallow bowl.</li>
-                  <li>Arrange the granola, fresh berries, and chia seeds neatly on top. Serve immediately!</li>
+                  <li>Add water, crushed ginger, cinnamon, and cloves to a saucepan and bring to a boil.</li>
+                  <li>Add Princess Regular Tea leaves and simmer for 3-4 minutes.</li>
+                  <li>Pour in the milk and let it boil up twice for a rich texture.</li>
+                  <li>Strain and serve immediately for instant warming comfort.</li>
                 </ol>
               </div>
             </div>
           </div>
 
-          <!-- Recipe 3: Chowder -->
+          <!-- Recipe 3: Golden Amber Brew -->
           <div class="recipe-content-panel" id="recipe-chowder">
             <div class="recipe-panel-grid">
               <div class="recipe-details">
-                <h3 class="recipe-name">Creamy Corn Chowder</h3>
+                <h3 class="recipe-name">Golden Amber Brew</h3>
                 <div class="recipe-meta">
-                  <span><i class="fa-regular fa-clock"></i> 25 mins</span>
+                  <span><i class="fa-regular fa-clock"></i> 10 mins</span>
                   <span><i class="fa-solid fa-fire-flame-simple"></i> Medium</span>
-                  <span><i class="fa-solid fa-leaf"></i> Hearty</span>
+                  <span><i class="fa-solid fa-leaf"></i> Rich Aroma</span>
                 </div>
-                <p class="recipe-desc">A comforting, rich, dairy-free chowder made naturally thick and sweet by incorporating Milkies Oat Milk, fresh sweet corn, and gold potatoes.</p>
+                <p class="recipe-desc">A premium, full-bodied golden black tea brewed with Golden Leaf Special, showcasing a rich amber color and sweet honey notes.</p>
                 
                 <div class="serving-selector-wrapper">
                   <span class="serving-label">Servings:</span>
@@ -430,21 +491,19 @@
 
                 <h4 class="ingredients-title">Ingredients:</h4>
                 <ul class="ingredients-list" id="ingredients-chowder" data-servings="4">
-                  <li data-base="3"><span>3</span> cups of Milkies Oat Milk</li>
-                  <li data-base="3"><span>3</span> cups fresh or frozen sweet corn kernels</li>
-                  <li data-base="2"><span>2</span> medium gold potatoes (diced)</li>
-                  <li data-base="1"><span>1</span> small yellow onion (diced)</li>
-                  <li data-base="2"><span>2</span> cloves garlic (minced)</li>
-                  <li data-base="2"><span>2</span> tbsp olive oil</li>
+                  <li data-base="2"><span>2</span> cups of spring water</li>
+                  <li data-base="2"><span>2</span> tsp of Golden Leaf Special leaves</li>
+                  <li data-base="1"><span>1</span> tsp of raw honey or rock sugar</li>
+                  <li data-base="1"><span>1</span> slice of fresh lemon (optional)</li>
                 </ul>
               </div>
               <div class="recipe-steps">
                 <h4 class="steps-title">Instructions:</h4>
                 <ol class="steps-list">
-                  <li>Sauté the onion and garlic in olive oil in a large pot until soft and fragrant.</li>
-                  <li>Add the diced potatoes, corn kernels, and vegetable stock. Simmer for 15 minutes until potatoes are tender.</li>
-                  <li>Pour in the Milkies Oat Milk and bring to a light simmer. Do not boil.</li>
-                  <li>Blend half of the soup in a blender and pour back into the pot for a thick, chunky texture. Season with salt, pepper, and fresh chives.</li>
+                  <li>Heat fresh spring water until it reaches a gentle boil.</li>
+                  <li>Add Golden Leaf Special tea leaves to the pot and turn off the heat.</li>
+                  <li>Steep covered for 3-5 minutes to let the golden leaves unfurl completely.</li>
+                  <li>Strain into cups, stir in raw honey or rock sugar, and enjoy the pure amber liquor.</li>
                 </ol>
               </div>
             </div>
@@ -459,7 +518,7 @@
     <div class="section-container">
       <div class="section-header">
         <span class="section-tag">Loved by Thousands</span>
-        <h2 class="section-title">What the Milkies Community Says</h2>
+        <h2 class="section-title">What the Baba Gold Community Says</h2>
       </div>
 
       <div class="testimonials-slider-container">
@@ -473,12 +532,12 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <p class="testimonial-quote">"The cashew milk is hands-down the best plant milk I've ever had. It froths up perfectly for my lattes and the taste is incredibly rich."</p>
+            <p class="testimonial-quote">"The Princess Regular Tea is hands-down the best CTC tea I've ever had. It brews into a beautiful deep amber color and the taste is incredibly rich."</p>
             <div class="testimonial-user">
               <div class="user-avatar" style="background-color: #729BFC;">S</div>
               <div class="user-info">
-                <span class="user-name">Sarah Jenkins</span>
-                <span class="user-role">Verified Buyer</span>
+                <span class="user-name">Suresh Sharma</span>
+                <span class="user-role">Tea Connoisseur</span>
               </div>
             </div>
           </div>
@@ -492,12 +551,12 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <p class="testimonial-quote">"My kids are obsessed with the Milkies Ice Cream. They can't even tell it's dairy-free, and it doesn't leave that heavy feeling. Absolutely outstanding."</p>
+            <p class="testimonial-quote">"My entire family is obsessed with the Princess Elaichi Tea. The cardamom flavor is natural and fresh, and it makes our morning chai ritual absolutely outstanding."</p>
             <div class="testimonial-user">
-              <div class="user-avatar" style="background-color: #DEC3A7;">M</div>
+              <div class="user-avatar" style="background-color: #DEC3A7;">P</div>
               <div class="user-info">
-                <span class="user-name">Marcus Brody</span>
-                <span class="user-role">Parent & Health Advocate</span>
+                <span class="user-name">Pooja Mehta</span>
+                <span class="user-role">Verified Buyer</span>
               </div>
             </div>
           </div>
@@ -511,12 +570,12 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <p class="testimonial-quote">"Being able to build my own milk blend is a game changer. I add protein and ashwagandha to my oat base, and it saves me buying supplements separately."</p>
+            <p class="testimonial-quote">"Being able to customize my own tea blend is a game changer! I love adding lemongrass and organic ginger to my Golden Leaf base. Perfect freshness."</p>
             <div class="testimonial-user">
-              <div class="user-avatar" style="background-color: #131B3D; color: white;">E</div>
+              <div class="user-avatar" style="background-color: #131B3D; color: white;">A</div>
               <div class="user-info">
-                <span class="user-name">Elena Rostova</span>
-                <span class="user-role">Fitness Trainer</span>
+                <span class="user-name">Ananya Roy</span>
+                <span class="user-role">Daily Chai Lover</span>
               </div>
             </div>
           </div>
@@ -541,10 +600,9 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <span class="logo-text">Milkies</span>
-            <span class="logo-trademark">®</span>
+            <img src="assets/logo.png" alt="DTK Princess Logo" class="logo-img">
           </a>
-          <p class="footer-tagline">Making plant-based nutrition premium, accessible, and delicious for everyone.</p>
+          <p class="footer-tagline">Making premium, handcrafted loose leaf and CTC Indian tea blends accessible to everyone.</p>
           <div class="social-links">
             <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
@@ -554,7 +612,7 @@
         </div>
 
         <div class="footer-newsletter">
-          <h4>Join the Milkies Club</h4>
+          <h4>Join the Baba Gold Tea Club</h4>
           <p>Subscribe for exclusive recipes, product launches, and 15% off your first order.</p>
           <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing! Check your email for your 15% off discount code.'); this.reset();">
             <input type="email" placeholder="Enter your email address" required aria-label="Email address">

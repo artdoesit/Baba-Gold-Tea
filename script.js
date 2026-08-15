@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------
-   Milkies JS Interactivity & Animations Script
+   Baba Gold Tea JS Interactivity & Animations Script
    ------------------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -57,40 +57,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ==========================================
-     3. Nutrition Comparison Panel
+     3. Tea Comparison Panel
      ========================================== */
   const nutritionData = {
     water: {
-      title: "Water Usage (per Liter)",
-      dairyVal: "650 Liters",
-      milkiesVal: "98 Liters",
+      title: "Purity & Sourcing",
+      dairyVal: "Pesticides Present",
+      milkiesVal: "100% Pesticide-Free",
       dairyWidth: "100%",
-      milkiesWidth: "15%",
-      summary: "Milkies Cashew Milk uses 85% less water than animal dairy, conserving water with every delicious glass."
+      milkiesWidth: "100%",
+      summary: "Baba Gold tea leaves are 100% organic and pesticide-free, grown with sustainable farming practices compared to mass-produced commercial blends."
     },
     co2: {
-      title: "CO2 Footprint (per Liter)",
-      dairyVal: "3.2 kg CO2",
-      milkiesVal: "0.42 kg CO2",
-      dairyWidth: "100%",
-      milkiesWidth: "13%",
-      summary: "Switching to Milkies reduces your greenhouse gas footprint by up to 87%, making it a highly sustainable choice."
+      title: "Tea Leaf Quality",
+      dairyVal: "Dust & Sweepings",
+      milkiesVal: "100% Whole Leaf",
+      dairyWidth: "30%",
+      milkiesWidth: "100%",
+      summary: "Unlike typical commercial bags filled with dust and sweepings (fannings), Baba Gold offers only premium whole leaf tea for a cleaner, richer brew."
     },
     calcium: {
-      title: "Calcium Content (per Serving)",
-      dairyVal: "300 mg",
-      milkiesVal: "450 mg",
-      dairyWidth: "66%",
+      title: "Antioxidant Levels (ORAC)",
+      dairyVal: "Low Retention",
+      milkiesVal: "Very High",
+      dairyWidth: "40%",
       milkiesWidth: "100%",
-      summary: "We enrich our plant milks with organic calcium. You get 50% more calcium per serving compared to cow's milk."
+      summary: "Whole leaf tea retains its natural essential oils and catechins, delivering up to 3x more active antioxidants than processed commercial bag dust."
     },
     sugar: {
-      title: "Sugar Content (per Serving)",
-      dairyVal: "12g Lactose",
-      milkiesVal: "0g Sugar",
-      dairyWidth: "100%",
+      title: "Flavors & Additives",
+      dairyVal: "Artificial Flavors",
+      milkiesVal: "100% Pure & Natural",
+      dairyWidth: "90%",
       milkiesWidth: "0%",
-      summary: "Our unsweetened cashew blend contains absolutely zero sugar, making it carb-conscious and diabetic-friendly."
+      summary: "We blend our tea leaves exclusively with real spices, herbs, and flowers—completely free of chemical flavorings and oils."
     }
   };
 
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ==========================================
-     4. Interactive Customizer: "Build Your Own Milk"
+     4. Interactive Customizer: "Blend Your Perfect Cup"
      ========================================= */
   const customForm = document.getElementById('custom-milk-form');
   const customPriceEl = document.getElementById('custom-price');
@@ -135,12 +135,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const tagSweet = document.getElementById('nutrient-tag-2');
   const btnAddCustom = document.getElementById('btn-add-custom');
 
-  // Colors mapping for milk bases to update the glow effect background color
+  // Colors mapping for tea bases to update the glow effect background color
   const glowColors = {
-    cashew: 'rgba(232, 223, 212, 0.4)',
-    oat: 'rgba(242, 235, 217, 0.4)',
-    almond: 'rgba(236, 226, 208, 0.4)',
-    coconut: 'rgba(253, 251, 247, 0.4)'
+    cashew: 'rgba(90, 69, 24, 0.4)',       // Amber brown (#5A4518)
+    oat: 'rgba(207, 161, 16, 0.4)',         // Gold/Yellow (#CFA110)
+    almond: 'rgba(78, 140, 52, 0.4)',      // Green (#4E8C34)
+    coconut: 'rgba(140, 88, 21, 0.4)'      // Dark brown (#8C5815)
   };
 
   const updateCustomizerValues = () => {
