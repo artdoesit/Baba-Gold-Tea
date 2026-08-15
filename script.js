@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (btnAddCustom) {
     btnAddCustom.addEventListener('click', () => {
       const selectedBaseName = document.querySelector('input[name="milk-base"]:checked').nextElementSibling.innerText;
-      showToast(`Custom ${selectedBaseName} Blend added to order! 🚀`);
+      showToast(`Inquiry for Custom ${selectedBaseName} submitted! ✉️`);
     });
   }
 
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
   cards.forEach(card => {
     card.addEventListener('click', () => {
       const title = card.querySelector('.card-title').innerText;
-      showToast(`Added ${title} to your cart! 🛍️`);
+      showToast(`Inquiry for ${title} submitted! ✉️`);
     });
   });
 
