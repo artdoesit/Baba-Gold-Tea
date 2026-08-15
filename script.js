@@ -253,66 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ==========================================
-     5. Recipes Serving Multiplier & Tabs
-     ========================================== */
-  const recipeTabBtns = document.querySelectorAll('.recipe-tab-btn');
-  const recipePanels = document.querySelectorAll('.recipe-content-panel');
-
-  recipeTabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      recipeTabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const recipeId = btn.getAttribute('data-recipe');
-      recipePanels.forEach(panel => {
-        panel.classList.remove('active');
-        if (panel.id === `recipe-${recipeId}`) {
-          panel.classList.add('active');
-        }
-      });
-    });
-  });
-
-  // Serving Counter Logic
-  const handleServingChange = (panel, isIncrement) => {
-    const countEl = panel.querySelector('.serving-count');
-    const ingredientList = panel.querySelector('.ingredients-list');
-    const initialServings = parseInt(ingredientList.getAttribute('data-servings'));
-    
-    let currentServings = parseInt(countEl.innerText);
-    if (isIncrement) {
-      currentServings++;
-    } else {
-      if (currentServings <= 1) return;
-      currentServings--;
-    }
-    
-    countEl.innerText = currentServings;
-
-    // Scale ingredient values
-    const items = ingredientList.querySelectorAll('li');
-    items.forEach(li => {
-      const baseVal = parseFloat(li.getAttribute('data-base'));
-      const spanVal = li.querySelector('span');
-      if (spanVal) {
-        const scaledVal = (baseVal / initialServings) * currentServings;
-        // Format to nice decimals
-        spanVal.innerText = scaledVal % 1 === 0 ? scaledVal : scaledVal.toFixed(2);
-      }
-    });
-  };
-
-  recipePanels.forEach(panel => {
-    const minusBtn = panel.querySelector('.minus-btn');
-    const plusBtn = panel.querySelector('.plus-btn');
-
-    if (minusBtn && plusBtn) {
-      minusBtn.addEventListener('click', () => handleServingChange(panel, false));
-      plusBtn.addEventListener('click', () => handleServingChange(panel, true));
-    }
-  });
-
 
   /* ==========================================
      6. Testimonial Slider Carousel
