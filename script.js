@@ -135,12 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const tagSweet = document.getElementById('nutrient-tag-2');
   const btnAddCustom = document.getElementById('btn-add-custom');
 
-  // Colors mapping for tea bases to update the glow effect background color
   const glowColors = {
     cashew: 'rgba(90, 69, 24, 0.4)',       // Amber brown (#5A4518)
     oat: 'rgba(207, 161, 16, 0.4)',         // Gold/Yellow (#CFA110)
-    almond: 'rgba(78, 140, 52, 0.4)',      // Green (#4E8C34)
-    coconut: 'rgba(140, 88, 21, 0.4)'      // Dark brown (#8C5815)
+    almond: 'rgba(78, 140, 52, 0.4)'       // Green (#4E8C34)
   };
 
   const updateCustomizerValues = () => {
@@ -167,18 +165,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const baseImages = {
       cashew: 'assets/baba_gold_tea.png',
       oat: 'assets/princess_gold_tea.png',
-      almond: 'assets/princess_elaichi_tea.png',
-      coconut: 'assets/baba_gold_tea.png'
+      almond: 'assets/princess_elaichi_tea.png'
     };
 
     if (customBottleImg) {
       customBottleImg.src = baseImages[baseKey];
-      if (baseKey === 'coconut') {
-        // Apply warm oolong-colored filter to the package
-        customBottleImg.style.filter = 'drop-shadow(0 15px 25px rgba(0,0,0,0.2)) sepia(0.55) saturate(1.1) hue-rotate(-25deg) brightness(0.8)';
-      } else {
-        customBottleImg.style.filter = 'drop-shadow(0 15px 25px rgba(0,0,0,0.2))';
-      }
+      customBottleImg.style.filter = 'drop-shadow(0 15px 25px rgba(0,0,0,0.2))';
     }
 
     // Update base tag text
