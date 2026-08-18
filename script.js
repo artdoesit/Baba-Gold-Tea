@@ -167,7 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
     princess_regular: 'rgba(178, 34, 34, 0.4)',  // Firebrick Red
     princess_elaichi: 'rgba(27, 77, 62, 0.4)',   // Green
     baba_dilkhush: 'rgba(210, 20, 58, 0.4)',    // Jar Red
-    baba_premium: 'rgba(212, 175, 55, 0.4)'     // Premium Gold
+    baba_premium: 'rgba(212, 175, 55, 0.4)',     // Premium Gold
+    black_diamond: 'rgba(34, 34, 34, 0.4)'       // Black Diamond
   };
 
   const updateCustomizerValues = () => {
@@ -196,7 +197,8 @@ document.addEventListener('DOMContentLoaded', () => {
       princess_regular: BABA_TEA_IMAGES.princess_regular,
       princess_elaichi: BABA_TEA_IMAGES.princess_elaichi,
       baba_dilkhush: BABA_TEA_IMAGES.baba_dilkhush,
-      baba_premium: BABA_TEA_IMAGES.baba_premium
+      baba_premium: BABA_TEA_IMAGES.baba_premium,
+      black_diamond: BABA_TEA_IMAGES.black_diamond
     };
 
     if (customBottleImg) {
