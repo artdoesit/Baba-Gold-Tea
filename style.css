@@ -1558,6 +1558,10 @@ a {
     padding: 0 20px;
   }
 
+  .logo-img {
+    height: 48px;
+  }
+
   .nav-menu, .header-actions .btn-outline {
     display: none;
   }
@@ -1576,8 +1580,10 @@ a {
   }
   
   .bottle-wrapper {
-    width: 320px;
-    height: 240px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
   
   .vegan-badge {
@@ -1728,5 +1734,18 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px 20px;
+  }
+
+  /* Customizer mobile overrides */
+  .custom-bottle-container {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    padding: 10px;
+  }
+
+  .floating-nutrition-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
   }
 }
