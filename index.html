@@ -71,7 +71,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
   <!-- FontAwesome Icons for UI -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -86,10 +86,9 @@
   <header class="main-header">
     <div class="header-container">
       <a href="#" class="logo">
-        <img src="assets/logo.png" alt="DTK Princess Logo" class="logo-img">
+        <img src="assets/logo.png?v=4" alt="DTK Baba Gold Logo" class="logo-img">
       </a>
       <nav class="nav-menu">
-        <a href="#products" class="nav-link">Products</a>
         <a href="#nutrition" class="nav-link">Why Baba Gold</a>
         <a href="#customizer" class="nav-link">Custom Blend</a>
       </nav>
@@ -105,7 +104,6 @@
   <div class="mobile-drawer">
     <button class="mobile-drawer-close"><i class="fa-solid fa-xmark"></i></button>
     <nav class="mobile-nav-links">
-      <a href="#products" class="mobile-link">Products</a>
       <a href="#nutrition" class="mobile-link">Why Baba Gold</a>
       <a href="#customizer" class="mobile-link">Custom Blend</a>
     </nav>
@@ -125,7 +123,7 @@
       <div class="hero-centerpiece">
         <!-- Rotating Tilted Bottle -->
         <div class="bottle-wrapper">
-          <img src="assets/centerpiece.png" alt="Baba Gold Tea Products" class="hero-bottle-img">
+          <img src="assets/centerpiece.png?v=3" alt="Baba Gold Tea Products" class="hero-bottle-img">
         </div>
       </div>
 
@@ -134,55 +132,9 @@
         <p class="hero-tagline">🍃 100% Whole Leaf & Organic</p>
       </div>
 
-      <!-- Bottom Layout Element: Product Cards -->
-      <div class="hero-bottom-right" id="products">
-        <div class="product-cards-grid">
-          <!-- Card 1: Special Gold Tea -->
-          <div class="product-card card-tea" data-color="#5A4518">
-            <div class="card-info">
-              <h3 class="card-title">Special Gold Tea</h3>
-              <p class="card-price">from $9</p>
-            </div>
-            <div class="card-image-wrapper">
-              <img src="assets/baba_gold_tea.png" alt="Baba Gold Special Gold Tea" class="card-product-img">
-            </div>
-            <div class="card-hover-overlay">
-              <span class="view-details">Inquire Now <i class="fa-solid fa-envelope"></i></span>
-            </div>
-          </div>
-
-          <!-- Card 2: Princess Gold Tea -->
-          <div class="product-card card-princess-tea" data-color="#1C3F24">
-            <div class="card-info">
-              <h3 class="card-title">Princess Regular Tea</h3>
-              <p class="card-price">from $12</p>
-            </div>
-            <div class="card-image-wrapper">
-              <img src="assets/princess_gold_tea.png" alt="Princess Gold Tea" class="card-product-img">
-            </div>
-            <div class="card-hover-overlay">
-              <span class="view-details">Inquire Now <i class="fa-solid fa-envelope"></i></span>
-            </div>
-          </div>
-
-          <!-- Card 3: Princess Elaichi Tea -->
-          <div class="product-card card-princess-elaichi-tea" data-color="#D4AF37">
-            <div class="card-info">
-              <h3 class="card-title">Princess Elaichi Tea</h3>
-              <p class="card-price">from $10</p>
-            </div>
-            <div class="card-image-wrapper">
-              <img src="assets/princess_elaichi_tea.png" alt="Princess Elaichi Tea" class="card-product-img">
-            </div>
-            <div class="card-hover-overlay">
-              <span class="view-details">Inquire Now <i class="fa-solid fa-envelope"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
+
 
   <!-- Interactive Nutrition / Comparison Section -->
   <section class="nutrition-section" id="nutrition">
@@ -259,10 +211,10 @@
         <!-- Bottle Preview Panel -->
         <div class="preview-panel">
           <div class="custom-bottle-container">
-            <img src="assets/baba_gold_tea.png" alt="Custom Tea Pack Mockup" class="custom-bottle-img" id="custom-bottle-img">
+            <img src="assets/baba_gold_special.jpg" alt="Custom Tea Pack Mockup" class="custom-bottle-img" id="custom-bottle-img">
             <div class="glow-effect"></div>
             <!-- Dynamic Nutrition Badges -->
-            <div class="floating-nutrition-tag" id="nutrient-tag-1">Special Gold Blend</div>
+            <div class="floating-nutrition-tag" id="nutrient-tag-1">DTK Baba Gold Special Gold Tea</div>
             <div class="floating-nutrition-tag" id="nutrient-tag-2">250 Grams</div>
           </div>
           <div class="price-container">
@@ -279,19 +231,29 @@
               <label class="control-group-title">1. Select Your Tea Base</label>
               <div class="options-grid">
                 <label class="option-card checked">
-                  <input type="radio" name="milk-base" value="cashew" checked data-price="0.00" data-color="#5A4518">
-                  <span class="option-name">Special Gold Blend</span>
+                  <input type="radio" name="milk-base" value="baba_special" checked data-price="0.00" data-color="#C21807">
+                  <span class="option-name">DTK Baba Gold Special Gold Tea</span>
                   <span class="option-desc">Robust & bold flavor</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="milk-base" value="oat" data-price="20.00" data-color="#CFA110">
-                  <span class="option-name">Princess Regular Blend</span>
-                  <span class="option-desc">Aromatic & smooth</span>
+                  <input type="radio" name="milk-base" value="princess_regular" data-price="10.00" data-color="#B22222">
+                  <span class="option-name">DTK Princess Regular Gold Tea</span>
+                  <span class="option-desc">Aromatic & premium CTC</span>
                 </label>
                 <label class="option-card">
-                  <input type="radio" name="milk-base" value="almond" data-price="30.00" data-color="#4E8C34">
-                  <span class="option-name">Princess Elaichi Blend</span>
-                  <span class="option-desc">Light & refreshing</span>
+                  <input type="radio" name="milk-base" value="princess_elaichi" data-price="20.00" data-color="#1B4D3E">
+                  <span class="option-name">DTK Princess Elaichi Gold Tea</span>
+                  <span class="option-desc">Natural cardamom flavor</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="milk-base" value="baba_dilkhush" data-price="15.00" data-color="#D2143A">
+                  <span class="option-name">DTK Baba Gold Dilkhush Tea</span>
+                  <span class="option-desc">Premium CTC Dust Tea</span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="milk-base" value="baba_premium" data-price="25.00" data-color="#D4AF37">
+                  <span class="option-name">DTK Baba Gold Premium Gold Tea</span>
+                  <span class="option-desc">Exquisite blend, spoon free</span>
                 </label>
               </div>
             </div>
@@ -437,7 +399,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <img src="assets/logo.png" alt="DTK Princess Logo" class="logo-img">
+            <img src="assets/logo.png?v=4" alt="DTK Baba Gold Logo" class="logo-img">
           </a>
           <p class="footer-tagline">Making premium, handcrafted loose leaf and CTC Indian tea blends accessible to everyone.</p>
         </div>
@@ -474,7 +436,8 @@
     <span class="toast-text">Product added to cart successfully!</span>
   </div>
 
-  <!-- JavaScript File -->
-  <script src="script.js"></script>
+  <!-- JavaScript Files -->
+  <script src="assets-base64.js?v=3"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

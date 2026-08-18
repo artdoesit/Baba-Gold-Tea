@@ -5,6 +5,33 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ==========================================
+     0. Load Embedded Base64 Images
+     ========================================== */
+  if (typeof BABA_TEA_IMAGES !== 'undefined') {
+    const cardImages = {
+      'card-baba-special': BABA_TEA_IMAGES.baba_special,
+      'card-princess-regular': BABA_TEA_IMAGES.princess_regular,
+      'card-princess-elaichi': BABA_TEA_IMAGES.princess_elaichi,
+      'card-baba-dilkhush': BABA_TEA_IMAGES.baba_dilkhush,
+      'card-baba-premium': BABA_TEA_IMAGES.baba_premium
+    };
+
+    Object.keys(cardImages).forEach(className => {
+      const card = document.querySelector(`.${className}`);
+      if (card) {
+        const img = card.querySelector('.card-product-img');
+        if (img) img.src = cardImages[className];
+      }
+    });
+
+    // Also update customizer preview image default on load
+    const customPreviewImg = document.getElementById('custom-bottle-img');
+    if (customPreviewImg && BABA_TEA_IMAGES.baba_special) {
+      customPreviewImg.src = BABA_TEA_IMAGES.baba_special;
+    }
+  }
+
+  /* ==========================================
      1. Sticky Header & Parallax Scroll Effects
      ========================================== */
   const header = document.querySelector('.main-header');
@@ -136,9 +163,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnAddCustom = document.getElementById('btn-add-custom');
 
   const glowColors = {
-    cashew: 'rgba(90, 69, 24, 0.4)',       // Amber brown (#5A4518)
-    oat: 'rgba(207, 161, 16, 0.4)',         // Gold/Yellow (#CFA110)
-    almond: 'rgba(78, 140, 52, 0.4)'       // Green (#4E8C34)
+    baba_special: 'rgba(194, 24, 7, 0.4)',      // Red
+    princess_regular: 'rgba(178, 34, 34, 0.4)',  // Firebrick Red
+    princess_elaichi: 'rgba(27, 77, 62, 0.4)',   // Green
+    baba_dilkhush: 'rgba(210, 20, 58, 0.4)',    // Jar Red
+    baba_premium: 'rgba(212, 175, 55, 0.4)'     // Premium Gold
   };
 
   const updateCustomizerValues = () => {
@@ -163,9 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const baseImages = {
-      cashew: 'assets/baba_gold_tea.png',
-      oat: 'assets/princess_gold_tea.png',
-      almond: 'assets/princess_elaichi_tea.png'
+      baba_special: BABA_TEA_IMAGES.baba_special,
+      princess_regular: BABA_TEA_IMAGES.princess_regular,
+      princess_elaichi: BABA_TEA_IMAGES.princess_elaichi,
+      baba_dilkhush: BABA_TEA_IMAGES.baba_dilkhush,
+      baba_premium: BABA_TEA_IMAGES.baba_premium
     };
 
     if (customBottleImg) {
@@ -204,6 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Event Listeners for customizer changes
   if (customForm) {
     customForm.addEventListener('change', updateCustomizerValues);
+    updateCustomizerValues(); // Initialize values on load
   }
 
   // Cart Toast Notification
