@@ -940,6 +940,23 @@ a {
   position: relative;
 }
 
+.option-card .card-tag {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background-color: var(--accent-yellow);
+  color: var(--dark-navy);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.65rem;
+  padding: 3px 8px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
 .option-card input {
   position: absolute;
   opacity: 0;
