@@ -168,6 +168,10 @@ document.addEventListener('DOMContentLoaded', () => {
       { size: '500g', label: '500 Grams', desc: 'Family pack (₹220)', price: 220 },
       { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹400)', price: 400 }
     ],
+    baba_sachet: [
+      { size: '10', label: '₹10 Pack', desc: 'Single-use sachet (₹10)', price: 10 },
+      { size: '20', label: '₹20 Pack', desc: 'Double-use sachet (₹20)', price: 20 }
+    ],
     princess_regular: [
       { size: '200g', label: '200 Grams', desc: 'Standard pack (₹60)', price: 60 },
       { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹300)', price: 300 }
@@ -211,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const glowColors = {
     baba_special: 'rgba(194, 24, 7, 0.4)',      // Red
+    baba_sachet: 'rgba(217, 30, 24, 0.4)',       // Pouch Red
     princess_regular: 'rgba(178, 34, 34, 0.4)',  // Firebrick Red
     princess_elaichi: 'rgba(27, 77, 62, 0.4)',   // Green
     baba_dilkhush: 'rgba(210, 20, 58, 0.4)',    // Jar Red
@@ -249,6 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const baseImages = {
       baba_special: BABA_TEA_IMAGES.baba_special,
+      baba_sachet: BABA_TEA_IMAGES.baba_sachet,
       princess_regular: BABA_TEA_IMAGES.princess_regular,
       princess_elaichi: BABA_TEA_IMAGES.princess_elaichi,
       baba_dilkhush: BABA_TEA_IMAGES.baba_dilkhush,
