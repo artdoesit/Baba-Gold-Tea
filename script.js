@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹460)', price: 460 }
     ],
     baba_dilkhush: [
-      { size: '1pc', label: '1 Piece', desc: 'Standard pack (₹95)', price: 95 }
+      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹380)', price: 380 }
     ]
   };
 
