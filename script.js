@@ -173,7 +173,8 @@ document.addEventListener('DOMContentLoaded', () => {
       { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹300)', price: 300 }
     ],
     princess_elaichi: [
-      { size: '200g', label: '200 Grams', desc: 'Standard pack (₹60)', price: 60 }
+      { size: '200g', label: '200 Grams', desc: 'Standard pack (₹60)', price: 60 },
+      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹300)', price: 300 }
     ],
     black_diamond: [
       { size: '250g', label: '250 Grams', desc: 'Standard pack (₹115)', price: 115 },
