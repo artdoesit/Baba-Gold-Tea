@@ -177,7 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     black_diamond: [
       { size: '250g', label: '250 Grams', desc: 'Standard pack (₹115)', price: 115 },
-      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹300)', price: 300 }
+      { size: '500g', label: '500 Grams', desc: 'Family pack (₹230)', price: 230 },
+      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹460)', price: 460 }
     ],
     baba_dilkhush: [
       { size: '1pc', label: '1 Piece', desc: 'Standard pack (₹95)', price: 95 }
