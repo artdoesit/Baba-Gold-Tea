@@ -162,23 +162,75 @@ document.addEventListener('DOMContentLoaded', () => {
   const tagSweet = document.getElementById('nutrient-tag-2');
   const btnAddCustom = document.getElementById('btn-add-custom');
 
+  const teaPricings = {
+    baba_special: [
+      { size: '250g', label: '250 Grams', desc: 'Standard pack (₹100)', price: 100 },
+      { size: '500g', label: '500 Grams', desc: 'Family pack (₹220)', price: 220 },
+      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹400)', price: 400 }
+    ],
+    princess_regular: [
+      { size: '200g', label: '200 Grams', desc: 'Standard pack (₹60)', price: 60 }
+    ],
+    princess_elaichi: [
+      { size: '200g', label: '200 Grams', desc: 'Standard pack (₹60)', price: 60 }
+    ],
+    black_diamond: [
+      { size: '250g', label: '250 Grams', desc: 'Standard pack (₹115)', price: 115 }
+    ],
+    baba_dilkhush: [
+      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹380)', price: 380 }
+    ]
+  };
+
+  const renderPackSizes = (baseKey) => {
+    const container = document.getElementById('pack-size-container');
+    if (!container) return;
+
+    const sizes = teaPricings[baseKey] || [];
+    let html = '';
+
+    sizes.forEach((opt, index) => {
+      const isChecked = index === 0 ? 'checked' : '';
+      const cardClass = index === 0 ? 'option-card checked' : 'option-card';
+      
+      html += `
+        <label class="${cardClass}">
+          <input type="radio" name="sweetness" value="${opt.size}" ${isChecked} data-price="${opt.price}.00">
+          <span class="option-name">${opt.label}</span>
+          <span class="option-desc">${opt.desc}</span>
+        </label>
+      `;
+    });
+
+    container.innerHTML = html;
+  };
+
   const glowColors = {
     baba_special: 'rgba(194, 24, 7, 0.4)',      // Red
     princess_regular: 'rgba(178, 34, 34, 0.4)',  // Firebrick Red
     princess_elaichi: 'rgba(27, 77, 62, 0.4)',   // Green
     baba_dilkhush: 'rgba(210, 20, 58, 0.4)',    // Jar Red
-    baba_premium: 'rgba(212, 175, 55, 0.4)',     // Premium Gold
     black_diamond: 'rgba(34, 34, 34, 0.4)'       // Black Diamond
   };
 
-  const updateCustomizerValues = () => {
-    let totalPrice = 0;
+  let currentBaseKey = '';
 
+  const updateCustomizerValues = () => {
     // 1. Get Base
     const selectedBase = document.querySelector('input[name="milk-base"]:checked');
-    const basePrice = parseFloat(selectedBase.getAttribute('data-price'));
+    if (!selectedBase) return;
+
+    const baseKey = selectedBase.value;
     const baseName = selectedBase.nextElementSibling.innerText;
-    totalPrice += basePrice;
+
+    // If the base has changed, re-render pack sizes!
+    if (baseKey !== currentBaseKey) {
+      currentBaseKey = baseKey;
+      renderPackSizes(baseKey);
+    }
+
+    const basePrice = parseFloat(selectedBase.getAttribute('data-price'));
+    let totalPrice = basePrice;
 
     // Apply active checked class to parent label
     document.querySelectorAll('input[name="milk-base"]').forEach(input => {
@@ -187,7 +239,6 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedBase.closest('.option-card').classList.add('checked');
 
     // Update glow color and preview image
-    const baseKey = selectedBase.value;
     if (glowEffect) {
       glowEffect.style.background = `radial-gradient(circle, ${glowColors[baseKey]} 0%, rgba(255,255,255,0) 70%)`;
     }
@@ -197,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
       princess_regular: BABA_TEA_IMAGES.princess_regular,
       princess_elaichi: BABA_TEA_IMAGES.princess_elaichi,
       baba_dilkhush: BABA_TEA_IMAGES.baba_dilkhush,
-      baba_premium: BABA_TEA_IMAGES.baba_premium,
       black_diamond: BABA_TEA_IMAGES.black_diamond
     };
 
