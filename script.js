@@ -169,17 +169,18 @@ document.addEventListener('DOMContentLoaded', () => {
       { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹400)', price: 400 }
     ],
     princess_regular: [
-      { size: '200g', label: '200 Grams', desc: 'Standard pack (₹60)', price: 60 }
+      { size: '200g', label: '200 Grams', desc: 'Standard pack (₹60)', price: 60 },
+      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹300)', price: 300 }
     ],
     princess_elaichi: [
       { size: '200g', label: '200 Grams', desc: 'Standard pack (₹60)', price: 60 }
     ],
     black_diamond: [
       { size: '250g', label: '250 Grams', desc: 'Standard pack (₹115)', price: 115 },
-      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹440)', price: 440 }
+      { size: '1kg', label: '1 Kg', desc: 'Bulk pack (₹300)', price: 300 }
     ],
     baba_dilkhush: [
-      { size: '1pc', label: '1 Piece', desc: 'Premium pack (₹95)', price: 95 }
+      { size: '1pc', label: '1 Piece', desc: 'Standard pack (₹95)', price: 95 }
     ]
   };
 
